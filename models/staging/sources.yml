@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: contoso
+    database: autonomous-yeti-515708-e4
+    schema: contoso_analysis
+    tables:
+      - name: FactSales
+      - name: FactOnlineSales
+      - name: FactSalesQuota
+      - name: DimChannel
+      - name: DimDate
+      - name: DimStore
+      - name: DimSalesTerritory
+      - name: DimPromotion
+      - name: DimProduct
