@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: h2_promo_did
+    description: "H2 – Promosyon etkisi. Her promosyonlu bölge-ay, aynı ayda promosyonsuz bölgelerle karşılaştırıldı (difference-in-differences); sezon ve bölge etkisi kontrol edildi."
+    columns:
+      - name: promo_name
+        data_tests: [not_null]
+      - name: gp_lift_pct
+        data_tests: [not_null]
+
+  - name: h2_promo_effect_summary
+    description: "H2 – Promosyon bazında ortalama adet ve brüt kâr etkisi."
+    columns:
+      - name: promotion
+        data_tests: [unique, not_null]
