@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: stg_contoso__fact_sales
+    columns:
+      - name: sales_key
+        data_tests: [unique, not_null]
+  - name: stg_contoso__fact_online_sales
+    columns:
+      - name: online_sales_key
+        data_tests: [unique, not_null]
+  - name: stg_contoso__dim_channel
+    columns:
+      - name: channel_key
+        data_tests: [unique, not_null]
+  - name: stg_contoso__dim_date
+    columns:
+      - name: date_key
+        data_tests: [unique, not_null]
+  - name: stg_contoso__dim_store
+    columns:
+      - name: store_key
+        data_tests: [unique, not_null]
+  - name: stg_contoso__dim_sales_territory
+    columns:
+      - name: geography_key
+        data_tests: [unique, not_null]
+  - name: stg_contoso__dim_promotion
+    columns:
+      - name: promotion_key
+        data_tests: [unique, not_null]
